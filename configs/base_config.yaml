@@ -1,0 +1,24 @@
+# Shared project settings (safe to commit). Machine-local raw path comes from .env DATA_PATH.
+
+aircraft_tail: "N13337"
+
+paths:
+  processed_dir: "data/02_processed"
+  n13337_csv: "data/02_processed/n13337.csv"
+  n13337_parquet: "data/02_processed/n13337.parquet"
+
+raw:
+  # Each TrajAir day folder contains this filename
+  day_csv_name: "1.csv"
+
+splits:
+  # Chronological day ranges from the project proposal (MM-DD-YY folder prefixes)
+  train:
+    start: "09-12-20"
+    end: "02-03-21"
+  val:
+    start: "03-14-21"
+    end: "03-29-21"
+  test:
+    start: "03-30-21"
+    end: "04-27-21"

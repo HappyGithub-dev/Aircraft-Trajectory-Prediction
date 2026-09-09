@@ -1,4 +1,5 @@
 .env
+.venv/
 
 data/01_raw/*
 !data/01_raw/.gitkeep
