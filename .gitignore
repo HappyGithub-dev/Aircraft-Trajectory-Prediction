@@ -1,3 +1,6 @@
+.env
+.venv/
+
 data/01_raw/*
 !data/01_raw/.gitkeep
 data/02_processed/*
@@ -16,3 +19,4 @@ __pycache__/
 weights/*.pt
 weights/*.h5
 !weights/.gitkeep
+
